@@ -6,11 +6,11 @@ The project focuses on clean component architecture, responsive design, smooth a
 
 ## Live Demo
 
-Deployed link: Add your Vercel/Netlify link here
+Live Demo: tis-homepage-redesign-brown.vercel.app/
 
 ## GitHub Repository
 
-Repository link: Add your GitHub repository link here
+GitHub Repository: https://github.com/GNAVEEN1143/tis-homepage-redesign
 
 ---
 

@@ -1,0 +1,160 @@
+.admissions {
+  min-height: 650px;
+  padding: 120px 5%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #e9e6dc;
+}
+
+.admissions-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.admissions-content > span {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #68796d;
+}
+
+.admissions-content h2 {
+  margin: 0;
+  font-size: clamp(4rem, 7vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  color: #17251c;
+}
+
+.admissions-content h2 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #68796d;
+}
+
+.admissions-content > p {
+  max-width: 500px;
+  margin-top: 35px;
+  color: #59645c;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.admissions-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.admissions-primary,
+.admissions-secondary {
+  min-height: 52px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.admissions-primary {
+  background: #17251c;
+  color: #fff;
+}
+
+.admissions-primary:hover {
+  transform: translateY(-3px);
+  background: #293c2f;
+}
+
+.admissions-secondary {
+  border: 1px solid rgba(23, 37, 28, 0.2);
+  color: #17251c;
+}
+
+.admissions-secondary:hover {
+  transform: translateY(-3px);
+  background: rgba(23, 37, 28, 0.05);
+}
+
+.admissions-decoration {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 380px;
+  height: 380px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(23, 37, 28, 0.15);
+  border-radius: 50%;
+}
+
+.admissions-decoration::before,
+.admissions-decoration::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(23, 37, 28, 0.1);
+  border-radius: 50%;
+}
+
+.admissions-decoration::before {
+  width: 270px;
+  height: 270px;
+}
+
+.admissions-decoration::after {
+  width: 160px;
+  height: 160px;
+}
+
+.admissions-decoration span {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: #17251c;
+}
+
+@media (max-width: 900px) {
+  .admissions {
+    min-height: auto;
+    padding: 100px 20px;
+  }
+
+  .admissions-decoration {
+    right: -100px;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .admissions-content h2 {
+    font-size: 3.8rem;
+  }
+
+  .admissions-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admissions-primary,
+  .admissions-secondary {
+    width: 100%;
+  }
+
+  .admissions-decoration {
+    width: 280px;
+    height: 280px;
+    right: -120px;
+    top: 25%;
+  }
+}
